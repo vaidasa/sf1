@@ -1,8 +1,7 @@
 {% extends 'base.html.twig' %}
 {% block title %} Hi {% endblock %}
 {% block main %}
-    {#{{ dump() }}#}
-    {#{{ dump(app.request.query.get('name')) }}#}
-    Hello, {{ app.request.query.get('name') | default('CodeReviewVideos.com') }}
+
+    <div>My name is: {{ name | default("just me") }}</div>
 
 {% endblock %}
